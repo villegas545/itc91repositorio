@@ -16,8 +16,13 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/itc91',function(){
+    return view('hola');
+});
+
 Route::get('vista', function () {
-    
+
     $datos=array(
         'curso1' => 'Javascript',
         'curso2' => 'Java',
